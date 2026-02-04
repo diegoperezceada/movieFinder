@@ -8,7 +8,7 @@ import {
   switchMap,
   tap,
 } from 'rxjs';
-import { MovieService } from '../../../core/services/movie.services';
+import { MovieService } from '../../../core/services/movie.service';
 
 @Component({
   selector: 'app-header',

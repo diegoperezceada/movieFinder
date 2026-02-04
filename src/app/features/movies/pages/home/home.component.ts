@@ -1,5 +1,5 @@
 import { Component, inject, signal, effect } from '@angular/core';
-import { MovieService } from '../../../../core/services/movie.services';
+import { MovieService } from '../../../../core/services/movie.service';
 import { RouterLink } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 

@@ -1,0 +1,28 @@
+{
+  "HOME": {
+    "WATCH_NOW": "Ver ahora",
+    "POPULAR_TITLE": "Películas Populares",
+    "VIEW_DETAILS": "Ver detalles",
+    "LOADING": "Cargando películas..."
+  },
+  "DETAIL": {
+    "INFO": "Información",
+    "BUDGET": "Presupuesto",
+    "REVENUE": "Recaudación",
+    "RUNTIME": "Duración",
+    "STATUS": "Estado",
+    "SYNOPSIS": "Sinopsis",
+    "CAST": "Reparto Principal",
+    "WHERE_TO_WATCH": "¿Dónde ver ahora?",
+    "NOT_AVAILABLE": "No disponible en plataformas de suscripción actualmente en tu región."
+  },
+  "ACTOR": {
+    "PERSONAL_DATA": "Datos Personales",
+    "BIRTHDAY": "Nacimiento",
+    "PLACE_OF_BIRTH": "Lugar",
+    "POPULARITY": "Popularidad",
+    "BIOGRAPHY": "Biografía",
+    "NO_BIOGRAPHY": "No hay biografía disponible para este actor.",
+    "KNOWN_FOR": "Conocido por"
+  }
+}

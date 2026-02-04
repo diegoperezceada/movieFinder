@@ -1,0 +1,28 @@
+{
+  "HOME": {
+    "WATCH_NOW": "Watch now",
+    "POPULAR_TITLE": "Popular Movies",
+    "VIEW_DETAILS": "View details",
+    "LOADING": "Loading movies..."
+  },
+  "DETAIL": {
+    "INFO": "Information",
+    "BUDGET": "Budget",
+    "REVENUE": "Revenue",
+    "RUNTIME": "Runtime",
+    "STATUS": "Status",
+    "SYNOPSIS": "Synopsis",
+    "CAST": "Main Cast",
+    "WHERE_TO_WATCH": "Where to watch?",
+    "NOT_AVAILABLE": "Not available on subscription platforms in your region currently."
+  },
+  "ACTOR": {
+    "PERSONAL_DATA": "Personal Data",
+    "BIRTHDAY": "Birthday",
+    "PLACE_OF_BIRTH": "Place of birth",
+    "POPULARITY": "Popularity",
+    "BIOGRAPHY": "Biography",
+    "NO_BIOGRAPHY": "No biography available for this actor.",
+    "KNOWN_FOR": "Known for"
+  }
+}

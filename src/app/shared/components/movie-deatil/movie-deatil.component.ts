@@ -1,6 +1,6 @@
 import { Component, inject, signal, effect } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { MovieService } from '../../../core/services/movie.services';
+import { MovieService } from '../../../core/services/movie.service';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
