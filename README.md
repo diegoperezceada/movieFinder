@@ -1,27 +1,126 @@
-# MovieFinder
+<div align="center">
+  <img src="src/assets/img/favicon.svg" alt="MovieFlix Logo" width="120" height="120">
+  
+  # 🎬 MovieFlix
+  
+  ### Discover, Explore, and Enjoy Movies
+  
+  A modern, sleek movie discovery application built with Angular
+  
+  [![Angular](https://img.shields.io/badge/Angular-17.2.2-DD0031?style=for-the-badge&logo=angular&logoColor=white)](https://angular.io/)
+  [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+  [![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
+  
+</div>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.2.
+---
 
-## Development server
+## ✨ Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- 🔍 **Smart Search** - Find movies instantly with powerful search functionality
+- 🎭 **Actor Profiles** - Explore detailed information about your favorite actors
+- 🌐 **Multi-language** - Support for multiple languages (i18n)
+- 🎨 **Modern UI** - Clean, responsive design with smooth animations
+- ⚡ **Fast Performance** - Optimized for speed and efficiency
+- 📱 **Responsive** - Works seamlessly on all devices
 
-## Code scaffolding
+## 🚀 Quick Start
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Prerequisites
 
-## Build
+- Node.js (v18 or higher)
+- npm or yarn
+- Angular CLI
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Installation
 
-## Running unit tests
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/movieFinder.git
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# Navigate to project directory
+cd movieFinder
 
-## Running end-to-end tests
+# Install dependencies
+npm install
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+# Start development server
+ng serve
+```
 
-## Further help
+Navigate to `http://localhost:4200/` - the app will automatically reload when you make changes.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## 🛠️ Development
+
+### Generate Components
+
+```bash
+# Generate a new component
+ng generate component component-name
+
+# Other generators
+ng generate directive|pipe|service|class|guard|interface|enum|module
+```
+
+### Build for Production
+
+```bash
+# Build the project
+ng build
+
+# Build artifacts will be stored in the `dist/` directory
+ng build --configuration production
+```
+
+### Running Tests
+
+```bash
+# Execute unit tests via Karma
+ng test
+
+# Execute end-to-end tests
+ng e2e
+```
+
+## 📁 Project Structure
+
+```
+movieFinder/
+├── src/
+│   ├── app/
+│   │   ├── shared/
+│   │   │   └── components/
+│   │   │       ├── movie-detail/
+│   │   │       └── actor-detail/
+│   │   └── ...
+│   ├── assets/
+│   │   ├── img/
+│   │   └── i18n/
+│   └── environments/
+├── angular.json
+└── package.json
+```
+
+## 🌍 Internationalization
+
+The app supports multiple languages. Translation files are located in `src/assets/i18n/`.
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+## 🔗 Resources
+
+- [Angular Documentation](https://angular.io/docs)
+- [Angular CLI Reference](https://angular.io/cli)
+- [TypeScript Documentation](https://www.typescriptlang.org/docs/)
+
+---
+
+<div align="center">
+  Made with ❤️ using Angular
+</div>
