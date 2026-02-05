@@ -60,8 +60,30 @@ export class HeaderComponent {
     this.isScrolled.set(window.scrollY > 50);
   }
 
+  @HostListener('document:click', ['$event'])
+  onDocumentClick(event: MouseEvent) {
+    const target = event.target as HTMLElement;
+    const searchContainer = target.closest('.search-container');
+
+    // If click is outside search container, clear results
+    if (
+      !searchContainer &&
+      (this.searchResults().length > 0 || this.hasSearched())
+    ) {
+      this.searchResults.set([]);
+      this.hasSearched.set(false);
+    }
+  }
+
   onTyping(event: Event) {
     const query = (event.target as HTMLInputElement).value;
+
+    // Clear results if input is empty
+    if (query.trim().length === 0) {
+      this.searchResults.set([]);
+      this.hasSearched.set(false);
+    }
+
     this.searchSubject.next(query);
   }
 
@@ -79,5 +101,10 @@ export class HeaderComponent {
       this.searchResults.set([]);
       this.hasSearched.set(false);
     }
+  }
+
+  clearSearch() {
+    this.searchResults.set([]);
+    this.hasSearched.set(false);
   }
 }
