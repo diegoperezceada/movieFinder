@@ -2,14 +2,12 @@ import { Injectable, inject, signal, effect } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, map } from 'rxjs';
 import { TranslateService } from '@ngx-translate/core';
-import { environment } from '../../../enviroments/environment';
 
 @Injectable({ providedIn: 'root' })
 export class MovieService {
   private http = inject(HttpClient);
   private translate = inject(TranslateService);
-  private apiKey = environment.API_KEY;
-  private baseUrl = 'https://api.themoviedb.org/3';
+  private apiBaseUrl = '/api';
 
   language = signal<'es-ES' | 'en-US'>(
     (localStorage.getItem('movieAppLanguage') as 'es-ES' | 'en-US') || 'es-ES',
@@ -34,28 +32,26 @@ export class MovieService {
 
   getPopularMovies(): Observable<any[]> {
     return this.http
-      .get<any>(
-        `${this.baseUrl}/movie/popular?api_key=${this.apiKey}&language=${this.language()}`,
-      )
+      .get<any>(`${this.apiBaseUrl}/movies/popular?language=${this.language()}`)
       .pipe(map((res) => res.results));
   }
 
   getMovieDetails(id: string): Observable<any> {
     return this.http.get<any>(
-      `${this.baseUrl}/movie/${id}?api_key=${this.apiKey}&language=${this.language()}&append_to_response=credits,watch/providers`,
+      `${this.apiBaseUrl}/movies/details?id=${id}&language=${this.language()}`,
     );
   }
 
   getActorDetails(id: string): Observable<any> {
     return this.http.get<any>(
-      `${this.baseUrl}/person/${id}?api_key=${this.apiKey}&language=${this.language()}&append_to_response=combined_credits`,
+      `${this.apiBaseUrl}/actors/details?id=${id}&language=${this.language()}`,
     );
   }
 
   searchMovies(query: string): Observable<any[]> {
     return this.http
       .get<any>(
-        `${this.baseUrl}/search/movie?api_key=${this.apiKey}&query=${query}&language=${this.language()}`,
+        `${this.apiBaseUrl}/movies/search?query=${encodeURIComponent(query)}&language=${this.language()}`,
       )
       .pipe(map((res) => res.results));
   }

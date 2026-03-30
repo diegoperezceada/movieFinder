@@ -105,6 +105,17 @@ movieFinder/
 
 The app supports multiple languages. Translation files are located in `src/assets/i18n/`.
 
+## 🔐 TMDB Configuration
+
+This project keeps TMDB credentials on the server side when deployed to Vercel.
+
+Set one of these environment variables in your Vercel project:
+
+- `TMDB_READ_ACCESS_TOKEN` (recommended)
+- `TMDB_API_KEY`
+
+The Angular app no longer calls TMDB directly from the browser. It uses internal Vercel API routes under `/api/...`, so the credential is not exposed in the frontend bundle.
+
 ## 🤝 Contributing
 
 Contributions are welcome! Feel free to submit a Pull Request.
